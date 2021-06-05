@@ -1,36 +1,34 @@
 <html>
 
-<head>
-	<title>JS Chat</title>
+	<head>
+		<title>JS Chat</title>
+		<!-- metatags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- include css -->
-	<link rel="stylesheet" type="text/css" href="css/chat.css">
+		<!-- include css -->
+		<link rel="stylesheet" type="text/css" href="css/chat.css">
 
-</head>
+	</head>
 
-<body>
-	<div class="container">
-		<h1 class="section-heading">JS Chat</h1>
-		
-		<div class="chat-window">
-			<div class="chat-wrapper">
-				<div id="chatHistory"></div>
-				<div id="liveChat"></div>
-			</div>
-
-			<div class="form-container">
-				<textarea id="chatInput" placeholder='Type your question here...'></textarea>
-				<button id='chatSubmit' type="button">SEND</button>
-			</div>
+	<body>
+		<div class="container">
+			<h1 class="section-heading">JS Chat</h1>
 			
-			
+			<div class="chat-window">
+				<div class="chat-wrapper">
+					<div id="chatHistory"></div>
+					<div id="liveChat"></div>
+				</div>
+
+				<div class="form-container">
+					<textarea id="chatInput" placeholder='Type your question here...'></textarea>
+					<button id='chatSubmit' type="button">SEND</button>
+				</div>
+			</div>
 		</div>
-		
-	</div>
 
-	<!-- include js files -->
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/chat.js"></script>
-</body>
-
+		<!-- include js files -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/chat.js"></script>
+	</body>
 </html>
