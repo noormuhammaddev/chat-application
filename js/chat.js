@@ -120,19 +120,22 @@ function CreateMessageItem(chats) {
   let messages = []
   chats.map(item => {
     const messageWrapper = document.createElement('div')
-    messageWrapper.className = "message-container"
-    const timestamp = document.createElement("p")
-    const message = document.createElement("p")
-    const from = document.createElement("p")
+    messageWrapper.className = item.from === "Visitor" ? "message-container visitor" : "message-container"
+
+    const timestamp = document.createElement("div")
+    const message = document.createElement("div")
+    const from = document.createElement("div")
+
     timestamp.className = "timestamp"
     message.className = "message"
-    from.className = "message-sender"
+    from.className = "from" 
+
     timestamp.textContent = item.datetime
     message.textContent = item.message
     from.textContent = item.from
     messageWrapper.appendChild(from)
-    messageWrapper.appendChild(timestamp)
     messageWrapper.appendChild(message)
+    messageWrapper.appendChild(timestamp)
     messages.push(messageWrapper)
   })
   return messages

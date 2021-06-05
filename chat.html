@@ -10,16 +10,20 @@
 
 <body>
 	<div class="container">
-		<h1>JS Chat</h1>
+		<h1 class="section-heading">JS Chat</h1>
 		
 		<div class="chat-window">
-			<div id="chatHolder">
+			<div class="chat-wrapper">
 				<div id="chatHistory"></div>
 				<div id="liveChat"></div>
-				
 			</div>
-			<textarea id="chatInput" placeholder='Type your question here...'></textarea>
-			<input id='chatSubmit' type="button" value='SEND'></input>
+
+			<div class="form-container">
+				<textarea id="chatInput" placeholder='Type your question here...'></textarea>
+				<button id='chatSubmit' type="button">SEND</button>
+			</div>
+			
+			
 		</div>
 		
 	</div>
